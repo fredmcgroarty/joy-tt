@@ -1,24 +1,18 @@
-# README
+# Joy Tech Test README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+requires ruby-3.2.2 and a local instance of pg. .
 
-Things you may want to cover:
+this is a stripped back rails app, containing only a model & service object layer.
 
-* Ruby version
+Unit tests within the spec folder demonstrate the requirements of the test.
 
-* System dependencies
+## setup
 
-* Configuration
+`docker-compose build`
 
-* Database creation
+`docker compose run --rm api bundle exec rake db:setup`
 
-* Database initialization
+## run tests
 
-* How to run the test suite
+`docker compose run --rm bundle exec rspec`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
